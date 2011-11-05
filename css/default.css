@@ -1,0 +1,331 @@
+body { 
+	background: #000;
+	margin:     0; 
+	padding:    0; 
+	overflow-y: scroll;
+}
+
+body, input, textarea, select { 
+	color: #1F1F1F; 
+	font:  16px Arial, Helvetica, sans-serif; 
+}
+
+#ajaxLoading {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	background: url(../image/load.gif) no-repeat 100% 0;
+	width: 32px;
+	height: 16px;
+	color: #AAA;
+}
+
+a { 
+	color: #1F1F1F !important; 
+}
+
+a:focus, 
+a:active 				{ outline: none; }
+
+
+.xb1, .xb2, .xb3, .xb4, .xcontent { 
+	background-color: #E6EAFF; 
+}
+
+.xb1, .xb2, .xb3, .xb4 { 
+	display:  block; 
+	height:   1px; 	
+	overflow: hidden; 
+}
+
+.xb1 { 
+	margin: 0 5px; 
+}
+
+.xb2 { 
+	margin: 0 3px; 
+}
+
+.xb3 { 
+	margin: 0 2px; 
+}
+
+.xb4 { 
+	margin: 0 1px; height: 2px !important; 
+}
+
+.xcontent { 
+	padding: 4px 8px; 
+}
+
+.xwhite .xb1, .xwhite .xb2, .xwhite .xb3, .xwhite .xb4, .xwhite .xcontent { 
+	background: #FFFFFF; 
+}
+
+.xgreen .xb1, .xgreen .xb2, .xgreen .xb3, .xgreen .xb4, .xgreen .xcontent {
+	background: #DDFFCC; 
+}
+
+.xred   .xb1, .xred .xb2,   .xred .xb3,   .xred .xb4,   .xred   .xcontent { 
+	background: #FFCCCC; 
+}
+
+.xdblue .xb1, .xdblue .xb2, .xdblue .xb3, .xdblue .xb4, .xdblue .xcontent { 
+	background: #CCD4FF; 
+}
+
+.padBottom {
+    margin-bottom: 8px;
+}
+
+.header {
+	height:         48px;
+	font-size:      30px;
+	font-weight:    bold;
+	line-height:    44px;
+	overflow:       hidden;
+	margin-bottom:  16px;
+}
+
+.header span {
+	font-family:    Arial Black;
+	font-size:      60px;
+	letter-spacing: -0.16em;
+	margin-right:   4px;	
+}
+
+.loading {
+    background-image:    url(../image/load.gif);  
+}
+
+.center {
+    text-align: center;
+}
+
+.tab {
+    cursor:      pointer;
+	float:       left; 
+    font-weight: bold; 
+    margin-left: 4px; 
+    text-align:  center; 
+    width:       150px; 
+}
+
+.tab .xcontent {
+    padding: 0 0 4px 0;
+}
+
+.hide { 
+	display: none; 
+}
+
+.clear, .clr { 
+    clear:     both; 
+    font-size: 0.1px;
+    height:    0;
+}  
+
+#loading {
+	background: url(../image/load.gif) no-repeat 0 0;
+	height:     32px;
+	left:       50%;
+	margin:     -16px;
+	position:   absolute;
+	top:        234px;
+	width:      32px;	
+	z-index:    10;
+}
+
+#page {
+	background: url(../image/back.png) repeat-x 0 0;
+	margin:     auto;
+	min-height: 500px;
+	position:   relative;
+	width:      960px;
+}
+
+#logo { 
+	background: url(../image/back-logo.png) no-repeat 0 0;
+	height: 500px;
+	width: 960px;
+}
+
+#hamster {
+	background: url(../image/hamster.png) no-repeat 100% 100%;
+	height:     445px;
+	width:      330px;
+	position:   absolute;
+	top:        -445px;
+	left:       -80px;
+	z-index:    2;
+}
+
+#scriptLinksBox {
+	overflow:    hidden;
+	width:       770px;
+	height:      160px;
+	position:    absolute;
+	top:         346px;
+	left:        190px;
+	padding-top: 8px;
+	height:      180px;
+}
+
+#scriptLinks {
+	position: absolute;
+}
+
+#scriptLinks a {
+		display: block;
+		margin: 4px;
+		padding: 76px 0 0 0;
+		float: left;
+		width: 150px;
+		height: 22px;
+		text-align: center;
+		background-color: #333;
+		background-repeat: no-repeat;
+		background-position: 50% 8px;
+		text-decoration: none;
+		color: #fff !important;
+		font-weight: bold;
+		font-size: 14px;
+}
+
+#scriptLinks a:hover {
+		background-color: #66CCFF;
+}
+
+.selected {
+		background-color: #CCFF66 !important;
+}
+
+.seasonBar {
+		float: left;
+		font-weight: bold;
+		margin: 4px;
+		padding: 2px 0;
+		background-color: #66CCFF;
+		color: #fff;
+		font-size: 18px;
+}
+
+#headerButtons {
+	top: 16px;
+	left: 0;
+	position: absolute;
+	padding: 0 0;
+}
+
+#headerButtons span, #headerButtons a {
+	position: relative;
+	display: block;
+	float: left;
+	color: #fff !important;
+	font-size: 22px;
+	text-align: center;
+	width: 192px;
+	text-decoration: none;
+	font-weight: bold;
+	background: #66CCFF; 
+	padding: 2px 0;
+	height: 28px;
+}
+
+#headerButtons a:hover {
+	background: #333;
+}
+
+.brightGreen {
+	background: #8AE65C !important;
+}
+
+#mainBox {
+	color: #ddd;
+	padding: 24px 24px 0 24px;
+}
+
+#mainBox a {
+	color: #ddd !important;
+}
+
+.mainTitle {
+	font-size: 20px;
+}a
+
+.block {
+	margin-bottom: 18px;
+}
+
+#episodeBox {
+	position: absolute;
+	left: 233px;
+	top: 86px;
+	width: 695px;
+	height: 200px;
+	z-index: 11;
+}
+
+#vimeoBox {
+	position: absolute;
+	z-index: 20;
+	top: 50%;
+	left: 50%;
+	margin-left: -400px;
+	margin-top: -300px;
+	width: 800px;
+	height: 600px;
+}
+
+#epClose {
+	background: url(../image/close.png) no-repeat 100% 0; 
+	height: 20px;
+	cursor: pointer;
+}
+
+
+/* Footer Level
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+	#footer { 
+			width:        576px; 
+			height:       26px; 
+			margin:       10px auto; 
+			padding-left: 20px;
+			margin-top:   32px;
+			bottom:       0px;
+	}
+	
+			#footer a { 
+					display:           block; 
+					float:             left; 
+					height:            26px; 
+					margin-right:      20px; 
+					text-indent:       -9999em; 
+					background-image:  url(../image/footer.gif); 
+					background-repeat: no-repeat; 
+			}
+			
+					.footer-1 { 
+							width: 71px; 
+					}
+					
+					.footer-2 { 
+							width:               89px; 
+							background-position: -92px; 
+					}
+					
+					.footer-3 { 
+							width:               98px; 
+							background-position: -199px; 
+					}
+					
+					.footer-4 { 
+							width:               54px; 
+							background-position: -316px; 
+					}
+					
+					.footer-5 { 
+							width:               159px; 
+							background-position: -389px; 
+					}

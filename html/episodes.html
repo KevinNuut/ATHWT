@@ -1,0 +1,15 @@
+<div style="width: 280px; height: 200px; float: left;">
+    <div style="height: 100px; background: url(wallpaper/thumbnail/<?php echo $OUT['id_key']; ?>.jpg) no-repeat 50% 50%;"></div>
+    <div style="height: 86px; padding: 8px 20px; background: url(image/movie-buttons.png) no-repeat 0 0;">
+    	<a id="epPlay" href="vimeo.php?id=<?php echo $OUT['id_key']; ?>" title="Watch Episode" style="display: block; width: 240px; height: 36px; margin-bottom: 8px; text-indent: -9999em;">Play Episode</a>    
+    	<a id="epScript" href="scripts.php?id=<?php echo $OUT['id_key']; ?>" title="Read The Entire Script" style="display: block; width: 116px; height: 28px; margin-right: 8px; text-indent: -9999em; float: left;">Script</a>
+    	<a id="epWallpaper" href="wallpapers.php?id=<?php echo $OUT['id_key']; ?>" title="View And Download Wallpaper" style="display: block; width: 116px; height: 28px; text-indent: -9999em; float: left;">Wallpaper</a>
+        <br class="clear" />
+    </div>
+</div>
+<div style="color: #fff; width: 415px; height: 200px; float: left;">
+	<div style="font-size: 20px;"><?php echo $OUT['season']; ?>: <?php echo $OUT['name_short']; ?></div>
+    <div style="font-size: 24px;"><?php echo $OUT['name']; ?></div>
+    <div><?php echo $OUT['description']; ?></div>
+</div>
+<br style="clear: both;" />
